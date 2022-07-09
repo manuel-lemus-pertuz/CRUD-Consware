@@ -9,7 +9,7 @@ const apiUrl = "http://localhost:1000/platos";
 function App() {
   return (
     <div className="App">
-      <h1 className="text-center">Aplicación de prueba!</h1>
+      <h1 className="text-center">CRUD-SIMPLE RESTAURANTE!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<ShowList />} />
@@ -24,16 +24,17 @@ function Home() {
   return (
     <>
       <div className="container mt-5">
-        <h4 className="text-center">Creación de nota</h4>
+        <h4 className="text-center">GESTIONAR MENÚ</h4>
           <div className="row">
             <div className="col-4"></div>
-            
+            <div className="col-4 text-center">
+              <button className="btn btn-white" type="submit">
+                <Link to="/about">Gestionar menú</Link>
+              </button>
+            </div>
             <div className="col-4"></div>
           </div>
       </div>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
     </>
   );
 }
@@ -253,7 +254,7 @@ function ShowList() {
         </div>
       </div>
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/">Volver al inicio</Link>
       </nav>
     </>
   );
