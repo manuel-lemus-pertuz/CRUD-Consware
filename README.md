@@ -25,6 +25,6 @@ Luego cree el archivo .end del frontend y agregue lo siguiente:
 * GENERATE_SOURCEMAP=false
 * REACT_APP_API_URL=http://localhost:1000
 
-Ejecute el siguiente comando en la carpeta backapp para correr el backend. 
+Ejecute el siguiente comando en la carpeta testapp para correr el frontend. 
 ```
 $ npm start
